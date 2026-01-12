@@ -1,0 +1,355 @@
+/* Reset */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #111; /* luxury black */
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: #000;
+  border-bottom: 1px solid #333;
+}
+.header .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d4af37; /* gold */
+  width: 100px;
+  height: 100px;
+}
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover{
+  color: #d4af37; /* gold hover */
+}
+
+/* Banner */
+.banner-content {
+  background: url('banner.jpg') center/cover no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.banner-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: gold;
+}
+.banner-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: gold;
+}
+/* clothing-Banner */
+.banner-cloth {
+  background: url('clothbanner.jpg') center/cover no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.banner-cloth h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+.banner-cloth p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+.banner-electro {
+  background: url('electrobanner.jpg') center/cover no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.banner-electro h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: gold;
+}
+.banner-electro p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: gold;
+}
+.banner-game {
+  background: url('gamebanner.jpg') center/cover no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.banner-game h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: gold;
+}
+.banner-game p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: gold;
+}
+.banner-skin {
+  background: url('skinbanner.jpg') center/cover no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.banner-skin h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: gold;
+}
+.banner-skin p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: gold;
+}
+.shop-now {
+  background: #d4af37;
+  color: #000;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.shop-now:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Categories */
+.categories {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.categories h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #d4af37;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.category {
+  padding: 2rem;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.category:hover {
+  background: #d4af37;
+  color: #000;
+}
+
+/* Products */
+.products {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #d4af37;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+.product-card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: #d4af37;
+}
+.product-card img {
+  width: 210px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: .75rem;
+  color: #fff;
+}
+.product-card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.add-cart {
+  background: #d4af37;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.add-cart:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  text-align: center;
+  padding: 2rem;
+  font-size: .9rem;
+  color: #aaa;
+  border-top: 1px solid #333;
+}
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  color: gold;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+/* Login Section */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  padding: 2rem;
+}
+
+.login-card {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.sub {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sub:hover {
+  background: #ffcc00;
+}
+
+.register-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.register-text a {
+  color: gold;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}

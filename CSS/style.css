@@ -42,7 +42,7 @@ body {
 
 /* Banner */
 .banner-content {
-  background: url('banner.jpg') center/cover no-repeat;
+  background: url('../IMAGES/banner.jpg') center/cover no-repeat;
   height: 75vh;
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@ body {
 }
 /* clothing-Banner */
 .banner-cloth {
-  background: url('clothbanner.jpg') center/cover no-repeat;
+  background: url('../IMAGES/clothbanner.jpg') center/cover no-repeat;
   height: 75vh;
   display: flex;
   align-items: center;
@@ -85,7 +85,7 @@ body {
   color: black;
 }
 .banner-electro {
-  background: url('electrobanner.jpg') center/cover no-repeat;
+  background: url('../IMAGES/electrobanner.jpg') center/cover no-repeat;
   height: 75vh;
   display: flex;
   align-items: center;
@@ -106,7 +106,7 @@ body {
   color: gold;
 }
 .banner-game {
-  background: url('gamebanner.jpg') center/cover no-repeat;
+  background: url('../IMAGES/gamebanner.jpg') center/cover no-repeat;
   height: 75vh;
   display: flex;
   align-items: center;
@@ -127,7 +127,7 @@ body {
   color: gold;
 }
 .banner-skin {
-  background: url('skinbanner.jpg') center/cover no-repeat;
+  background: url('../IMAGES/skinbanner.jpg') center/cover no-repeat;
   height: 75vh;
   display: flex;
   align-items: center;
